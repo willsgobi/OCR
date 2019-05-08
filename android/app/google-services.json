@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "821547730562",
+    "firebase_url": "https://leitor-de-imagens-a3a66.firebaseio.com",
+    "project_id": "leitor-de-imagens-a3a66",
+    "storage_bucket": "leitor-de-imagens-a3a66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821547730562:android:53efe50c7482ac9a",
+        "android_client_info": {
+          "package_name": "br.com.williamsgobi.test_ocrcamera"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821547730562-4n30939lsk4k8331l6kdu2svl9i8tigb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQv37lauiCRZE9esKAqkDzTbnC9mibOws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "821547730562-4n30939lsk4k8331l6kdu2svl9i8tigb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
