@@ -33,6 +33,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   File pickedImage;
+  String myText;
 
   bool isImageLoaded = false;
 
@@ -50,15 +51,18 @@ class _MyHomePageState extends State<MyHomePage> {
     TextRecognizer recognizeText = FirebaseVision.instance.textRecognizer();
     VisionText readText = await recognizeText.processImage(ourImage);
 
-    // for (TextBlock block in readText.blocks) {
-    //   for (TextLine line in block.lines) {
-    //     for (TextElement word in line.elements) {
-    //       print(word.text);
-    //     }
-    //   }
-    // }
+     for (TextBlock block in readText.blocks) {
+       for (TextLine line in block.lines) {
+         for (TextElement word in line.elements) {
+           print(block.text);
+         }
+       }
+     }
 
     translate(readText.text);
+    setState(() {
+      myText = readText.text;
+    });
   }
 
   void translate(String readText) async {
@@ -102,6 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text('Ler texto'),
               onPressed: readText,
             ),
+            Text("$myText")
           ],
         )
     );
